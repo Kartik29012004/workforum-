@@ -1,0 +1,138 @@
+
+.form-box
+{
+    max-width: 300px;
+    background: #f1f7fe;
+    overflow: hidden;
+    border-radius: 16px;
+    color: #010101;
+  }
+  
+  .form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 92px 24px 24px;
+    gap: 40;
+    text-align: center;
+    border-width: 80px;
+  }
+  
+  
+  .title {
+    font-weight: bold;
+    font-size: rem;
+  }
+  
+  .subtitle {
+    font-size: rem;
+    color: #3f68f0;
+  }
+  
+  .form-container {
+    overflow: hidden;
+    border-radius: 22px;
+    background-color: #ffffff;
+    margin: 1rem 0 .5rem;
+    width: 100%;
+  }
+  
+  .input {
+    background:none;
+    border: 0;
+    outline: 0;
+    height: 40px;
+    width: 130%;
+    border-bottom: 1px solid #6f7bee;
+    font-size: .9rem;
+    padding: 8px 15px;
+  }
+  
+  .form-section {
+    padding: 16px;
+    font-size: .85rem;
+    background-color: #0070fa;
+    box-shadow: rgba(238, 0, 0, 0.08) 0 -1px;
+  }
+  
+  .form-section a {
+    font-weight: bold;
+    color: #0066ff;
+    transition: color .3s ease;
+  }
+  
+  .form-section a:hover {
+    color: #005ce6;
+    text-decoration: underline;
+  }
+  
+  
+
+  
+  .form button:hover {
+    background-color: #afb2b8;
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+ 
+button {
+    font-family: inherit;
+    font-size: 20px;
+    background: royalblue;
+    color: white;
+    padding: 0.9em 2em;
+    padding-left: 0.6em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 26px;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+   padding-top: 10px;
+   
+  }
+  
+  button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+    padding-top: 10px;
+  }
+  
+  button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+  }
+  
+  button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+  }
+  
+  button:hover span {
+    transform: translateX(5em);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  @keyframes fly-1 {
+    from {
+      transform: translateY(0.1em);
+    }
+  
+    to {
+      transform: translateY(-0.1em);
+    }
+  }
+  

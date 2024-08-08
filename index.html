@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Details Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="center">
+        <div class="form-box">
+            <form class="form">
+                <span class="title">Sign up</span>
+                <span class="subtitle">Create a free account with your email.</span>
+                <div class="form-container">
+                    <form id="accountForm" onsubmit="validateForm()">
+                  <input type="text" id="name" name="name" required minlength="3" maxlength="50" class="input" placeholder="Full Name">
+                        <input type="email" class="input" placeholder="Email" required >
+                        <input type="tel" class="input" placeholder="Phone" required minlength="10" maxlength="14" >
+                        <input type="number" class="input" placeholder="Age"  required min="18" max="120" >
+                        <input type="text" class="input" placeholder="Gender" required minlength="4" maxlength="15"> 
+                        <input type="text" class="input" placeholder="Address" maxlength="50">
+                    
+                        <button>
+                            <div class="svg-wrapper-1">
+                              <div class="svg-wrapper">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 24 24"
+                                  width="24"
+                                  height="24"
+                                >
+                                  <path fill="none" d="M0 0h24v24H0z"></path>
+                                  <path
+                                    fill="currentColor"
+                                    d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                                  ></path>
+                                </svg>
+                              </div>
+                            </div>
+                            <span>Send</span>
+                          </button>
+    
+                    </form>
+                    
+                    </div>   
+           
+                    
+            </form>
+
+            </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
